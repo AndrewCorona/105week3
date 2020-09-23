@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fashion Pet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+</head>
+<body>
+
+  <header>
+
+  </header>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<main role="main">  
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Register your pet</h1>
+      <p>Fill out the details of your pet to be booked in our system.</p>
+    </div>
+  </div>
+  
+
+    <main id="register-main" role="main" class="container">
+        <form action="">
+
+
+            <p id="pPetName" class="form-group">
+            <label for="petName">Name of Pet</label><br>
+            <input type="text" class="form-control" name="petName" id="petName">
+            </p>
+
+            <p>
+            <label for="petAge">Age</label><br>
+            <input type="text" class="form-control" name="petAge" id="petAge">
+            </p>
+
+            <p>
+            <label for="petType">Type of Pet</label><br>
+            <select name="Type" class="form-control" id="petType">
+                <option value="" disabled select>Select a Service</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                </select>
+            </p>
+
+            <p>
+            <label for="petBreed">Breed of Pet</label><br>
+            <input type="text" class="form-control" name="petBreed" id="petBreed">
+            </p>
+
+            <p>
+            <label for="petGender">Gender of Pet</label><br>
+            <input type="text" class="form-control" name="petGender" id="petGender">
+            </p>
+
+            <p>
+                <label for="petPrice">Price</label><br>
+                <input type="number" class="form-control" name="petPrice" id="petPrice">
+                </p>
+
+            <p>
+            <label for="petService">Type of Service</label><br>
+            <select name="services" class="form-control" id="petService">
+                <option value="" disabled select>Select a Service</option>
+                <option value="Shower">Shower</option>
+                <option value="Hair Cut">Hair Cut</option>
+                <option value="Nail Cut">Nail Cut</option>
+                <option value="Full Service">Full Service</option>
+            </select>
+            </p>
+
+            <p>
+            <label for="ownerName">Name of Owner</label><br>
+            <input type="text" class="form-control" name="ownerName" id="ownerName">
+            </p>
+
+            <p>
+                <label for="DropOff">Drop-Off Date</label><br>
+                <input type="text" class="form-control" name="DropOff" id="DropOff">
+                </p>
+
+            <p>
+            <label for="contactPhone">Phone Number</label><br>
+            <input type="text" class="form-control" name="contactPhone" id="contactPhone">
+            </p>
+
+            <input id="register-btn" type="button" class="btn btn-success" value="Register">
+
+        </form>
+        <div id="petSection">
+        </div>
+        <div id="profits">
+        </div>
+        <p id="test"></p>
+
+        <div>
+            <input class="form-control" type="search" name="petSearch" id="petSearch">
+            <button id="search-btn" class="btn btn-success">Search</button>
+        </div>
+
+        <hr>
+    <section id="petSections" class="container table-container">
+      <table class="table">
+          <thead>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Type</th>
+              <th>Breed</th>
+              <th>Gender</th>
+              <th>Price</th>
+              <th>Service</th>
+              <th>Owner Name</th>
+              <th>Drop Off Date</th>
+              <th>Contact Phone</th>
+              
+          </thead>
+          <tbody id="petTable">
+
+          </tbody>
+      </table>
+  </section>
+    <hr>
+            
+    </main>
+
+    <footer>
+            <p>The Fashion Pet | Av. University 245-K 25896, Monday to Fridayfrom 8:00am to 5:00pm</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/directory.js"></script>
+    <script src="test/practice2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>

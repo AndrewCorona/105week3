@@ -1,0 +1,64 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+.tablechart{
+    display:inline-block;
+    text-align:center;
+}
+.bttn{
+    display: inline-block;
+    padding:10px 20px;
+}
+#table{
+display:block;
+margin-top:20px;
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#petSection{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.bordered{
+    border:1px solid black;
+}
+.active2{
+    border: 2px solid rgb(185,182,3);
+}
+.red-bg{
+    background-color:red;
+}
+.container-services{
+  width:50%; 
+  margin-right:auto;
+  margin-left:auto;
+  border:0px solid black; 
+}
+
+.card-text{
+    text-align:justify;
+    font-size:20px;   
+}
+
+.card h3{
+    text-align:center;
+}
+.container-services a{
+    font-size:1rem;
+    color:black;
+}
+.card{
+    margin-left:auto;
+    margin-right:auto;
+}
